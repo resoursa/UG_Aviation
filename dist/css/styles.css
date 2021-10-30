@@ -38,6 +38,15 @@ cite {
   }
 }
 
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: 1410px;
+}
+
+@media (max-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 100%;
+  }
+}
 .btn {
   border-radius: 10px;
   font-weight: 700;
@@ -255,10 +264,12 @@ h1, .h1 {
 }
 .airplanes-about .tab-text {
   max-width: 500px;
-  margin-bottom: 35px;
 }
 .airplanes-about .tab-pane {
   padding-top: 70px;
+}
+.airplanes-about .airplanes-tab__img {
+  margin: 0 auto;
 }
 .airplanes-about .airplanes-about__nav {
   display: flex;
@@ -284,8 +295,9 @@ h1, .h1 {
   padding-bottom: 50px;
   position: relative;
   padding-left: 0;
+  padding-right: 0;
+  text-align: center;
   width: 100%;
-  text-align: left;
 }
 .airplanes-about .nav-link::after {
   content: "";
@@ -320,6 +332,7 @@ h1, .h1 {
   .airplanes-about .tab-text {
     text-align: center;
     margin: 0 auto 35px;
+    padding-top: 35px;
   }
 }
 @media (max-width: 767px) {
@@ -368,6 +381,89 @@ h1, .h1 {
 }
 .airplanes-about .card {
   background-color: transparent;
+}
+
+/* Individual section */
+.airplanes-individual {
+  padding: 150px;
+  background-image: url("../img/airplanes-girl.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.airplanes-individual::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(.jpg);
+}
+.airplanes-individual .airplanes-individual__caption {
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  border-radius: 25px;
+  max-width: 510px;
+  padding: 41px 62px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 2;
+}
+.airplanes-individual .ariplanes-individual__title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+}
+.airplanes-individual .ariplanes-individual__subtitle {
+  font-size: 25px;
+  line-height: 37px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  margin-bottom: 10px;
+}
+.airplanes-individual .ariplanes-individual__text {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: justify;
+  letter-spacing: 0.01em;
+}
+
+.airplanes-salon {
+  padding: 150px 0 15px;
+}
+.airplanes-salon .airplanes-individual__box {
+  max-width: 330px;
+  margin: 0 auto 134px;
+}
+.airplanes-salon .airplanes-individual__box .airplanes-individual__box-title {
+  font-size: 25px;
+  line-height: 28px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.airplanes-salon .airplanes-individual__box .airplanes-individual__box-text {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 1200px) {
+  .airplanes-salon {
+    padding: 60px 0 0;
+  }
+  .airplanes-salon .airplanes-individual__box {
+    margin-bottom: 50px;
+  }
 }
 
 .site-header {
