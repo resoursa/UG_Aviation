@@ -127,12 +127,14 @@ block content
 					a#tab-C.nav-link(href='#pane-C' data-toggle='tab' role='tab') Крыло
 				li.nav-item
 					a#tab-D.nav-link(href='#pane-D' data-toggle='tab' role='tab') Хвост
+				li.nav-item
+					a#tab-E.nav-link(href='#pane-E' data-toggle='tab' role='tab') Шасси
 			#content.tab-content(role='tablist')
 				#pane-A.card.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='tab-A')
 					#heading-A.card-header(role='tab')
 						h5.mb-0
 							// Note: `data-parent` removed from here
-							a(data-toggle='collapse' href='#collapse-A' aria-expanded='true' aria-controls='collapse-A')
+							a.nav-link(data-toggle='collapse' href='#collapse-A' aria-expanded='true' aria-controls='collapse-A')
 								| Пропеллер
 					// Note: New place of `data-parent`
 					#collapse-A.collapse.show(data-parent='#content' role='tabpanel' aria-labelledby='heading-A')
@@ -141,11 +143,12 @@ block content
 								.col-lg-6.d-flex.align-items-center
 									.tab-text Планер полностью изготовлен из композитного материала, который отличается удельной прочностью и превосходными усталостными характеристиками. Весь самолет может быть разобран на отдельные части, то есть обе половины поверхности крыла и хвостового оперения, включая стабилизаторы, могут быть отделены от фюзеляжа для облегчения транспортировки самолета.
 								.col-lg-6.d-flex.align-items-center
-									img(src="./img/airplanes-1.png", alt="")
+									.airplanes-tab__img
+										img(src="./img/airplanes-1.png", alt="")
 				#pane-B.card.tab-pane.fade(role='tabpanel' aria-labelledby='tab-B')
 					#heading-B.card-header(role='tab')
 						h5.mb-0
-							a.collapsed(data-toggle='collapse' href='#collapse-B' aria-expanded='false' aria-controls='collapse-B')
+							a.nav-link.collapsed(data-toggle='collapse' href='#collapse-B' aria-expanded='false' aria-controls='collapse-B')
 								| Корпус
 					#collapse-B.collapse(data-parent='#content' role='tabpanel' aria-labelledby='heading-B')
 						.container
@@ -153,11 +156,12 @@ block content
 								.col-lg-6.d-flex.align-items-center
 									.tab-text Планер полностью изготовлен из композитного материала, который отличается удельной прочностью и превосходными усталостными характеристиками. Весь самолет может быть разобран на отдельные части, то есть обе половины поверхности крыла и хвостового оперения, включая стабилизаторы, могут быть отделены от фюзеляжа для облегчения транспортировки самолета.
 								.col-lg-6.d-flex.align-items-center
-									img(src="./img/airplanes-1.png", alt="")
+									.airplanes-tab__img
+										img(src="./img/airplanes-1.png", alt="")
 				#pane-C.card.tab-pane.fade(role='tabpanel' aria-labelledby='tab-C')
 					#heading-C.card-header(role='tab')
 						h5.mb-0
-							a.collapsed(data-toggle='collapse' href='#collapse-C' aria-expanded='false' aria-controls='collapse-C')
+							a.nav-link.collapsed(data-toggle='collapse' href='#collapse-C' aria-expanded='false' aria-controls='collapse-C')
 								| Крыло
 					#collapse-C.collapse(role='tabpanel' data-parent='#content' aria-labelledby='heading-C')
 						.container
@@ -165,12 +169,13 @@ block content
 								.col-lg-6.d-flex.align-items-center
 									.tab-text Планер полностью изготовлен из композитного материала, который отличается удельной прочностью и превосходными усталостными характеристиками. Весь самолет может быть разобран на отдельные части, то есть обе половины поверхности крыла и хвостового оперения, включая стабилизаторы, могут быть отделены от фюзеляжа для облегчения транспортировки самолета.
 								.col-lg-6.d-flex.align-items-center
-									img(src="./img/airplanes-1.png", alt="")
+									.airplanes-tab__img
+										img(src="./img/airplanes-1.png", alt="")
 
 				#pane-D.card.tab-pane.fade(role='tabpanel' aria-labelledby='tab-D')
 					#heading-D.card-header(role='tab')
 						h5.mb-0
-							a.collapsed(data-toggle='collapse' href='#collapse-D' aria-expanded='false' aria-controls='collapse-D')
+							a.nav-link.collapsed(data-toggle='collapse' href='#collapse-D' aria-expanded='false' aria-controls='collapse-D')
 								| Крыло
 					#collapse-D.collapse(role='tabpanel' data-parent='#content' aria-labelledby='heading-D')
 						.container
@@ -178,5 +183,20 @@ block content
 								.col-lg-6.d-flex.align-items-center
 									.tab-text Планер полностью изготовлен из композитного материала, который отличается удельной прочностью и превосходными усталостными характеристиками. Весь самолет может быть разобран на отдельные части, то есть обе половины поверхности крыла и хвостового оперения, включая стабилизаторы, могут быть отделены от фюзеляжа для облегчения транспортировки самолета.
 								.col-lg-6.d-flex.align-items-center
-									img(src="./img/airplanes-1.png", alt="")
+									.airplanes-tab__img
+										img(src="./img/airplanes-1.png", alt="")
+
+				#pane-E.card.tab-pane.fade(role='tabpanel' aria-labelledby='tab-E')
+					#heading-E.card-header(role='tab')
+						h5.mb-0
+							a.nav-link.collapsed(data-toggle='collapse' href='#collapse-E' aria-expanded='false' aria-controls='collapse-D')
+								| Шасси
+					#collapse-E.collapse(role='tabpanel' data-parent='#content' aria-labelledby='heading-E')
+						.container
+							.row
+								.col-lg-6.d-flex.align-items-center
+									.tab-text Планер полностью изготовлен из композитного материала, который отличается удельной прочностью и превосходными усталостными характеристиками. Весь самолет может быть разобран на отдельные части, то есть обе половины поверхности крыла и хвостового оперения, включая стабилизаторы, могут быть отделены от фюзеляжа для облегчения транспортировки самолета.
+								.col-lg-6.d-flex.align-items-center
+									.airplanes-tab__img
+										img(src="./img/airplanes-1.png", alt="")
 
