@@ -13,3 +13,16 @@ img { width: 100%;}
 svg { display: block;}
 
 cite { font-style: normal;}
+
+.background-format {
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.spacer-for-slider {
+  height: 700px;
+
+  @media (max-width: 991px) {
+    height: 450px;
+  }
+}

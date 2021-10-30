@@ -19,7 +19,23 @@
   <body>
     <!-- Site Header-->
     <header class="site-header">
-      <h2>Header</h2>
+      <div class="container d-flex align-items-center justify-content-between"><a class="main-logo"><img src="img/main-logo.svg"></a>
+        <div class="burger d-lg-none">
+          <svg width="34" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#6D6B6B" d="M0 .19h34v2H0zM0 7.19h34v2H0zM0 14.19h34v2H0z"></path>
+          </svg>
+        </div>
+        <nav class="main-navigation flex-grow-1">
+          <ul class="list-unstyled main-navigation d-flex justify-content-between ps-5 ms-5 mb-0">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Самолёт</a></li>
+            <li><a href="#">Демополёт</a></li>
+            <li><a href="#">Часто задаваемые вопросы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="lang-switcher"><span>RU</span>/<a href="#">UA</a></div>
+      </div>
     </header>
     <main>
       <section class="airplanes-hero"><img src="./img/airplanes-hero.png" alt="">

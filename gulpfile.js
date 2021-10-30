@@ -205,5 +205,5 @@ gulp.task('watch', () => {
 
 gulp.task(
   'default',
-  gulp.series('clean', 'vendor', gulp.parallel('pug', 'js:minified', 'js:expanded', 'sass:minified', 'sass:expanded'), 'watch')
+  gulp.series('clean', gulp.parallel('pug', 'js:minified', 'js:expanded', 'sass:minified', 'sass:expanded'), 'watch')
 );
