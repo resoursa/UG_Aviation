@@ -1,3 +1,28 @@
 // Site Header
 header.site-header
-  h2 Header
+  .container.d-flex.align-items-center.justify-content-between
+    a.main-logo
+      img(src="img/main-logo.svg")
+
+    .burger.d-lg-none
+      svg(width='34' height='17' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(fill='#6D6B6B' d='M0 .19h34v2H0zM0 7.19h34v2H0zM0 14.19h34v2H0z')
+
+
+    nav.main-navigation.flex-grow-1
+      ul.list-unstyled.main-navigation.d-flex.justify-content-between.ps-5.ms-5.mb-0
+        li
+          a(href="#") Компания
+        li
+          a(href="#") Самолёт
+        li
+          a(href="#") Демополёт
+        li
+          a(href="#") Часто задаваемые вопросы
+        li
+          a(href="#") Контакты
+
+    .lang-switcher
+      span RU
+      | /
+      a(href="#") UA
