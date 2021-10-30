@@ -1,11 +1,16 @@
-// All partial styles import
-
 // Core variables, mixins and placeholders
 @import 'helpers/variables';
 @import 'helpers/mixins';
 @import 'helpers/placeholders';
 @import 'helpers/utilities';
 @import 'helpers/scaffolding';
+
+// All partial styles import
+
+@import 'components/button';
+
+@import 'main-content';
+
 
 // Components
 

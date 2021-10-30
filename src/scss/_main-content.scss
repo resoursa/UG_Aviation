@@ -1,0 +1,62 @@
+.airplanes-hero {
+	position: relative;
+	display: flex;
+	margin-bottom: 97px;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 426px;
+		background: linear-gradient(180deg, #FFFFFF 31.92%, rgba(255, 255, 255, 0.88) 69.01%, rgba(255, 255, 255, 0) 96.02%);
+		transform: rotate(180deg);
+		z-index: 1;
+	}
+	.airplanes-hero__caption {
+		position: absolute;
+		bottom: 15%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.airplanes-hero__title {
+		font-weight: 500;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		font-size: 35px;
+		line-height: 41px;
+	}
+}
+
+.airplanes-numbers {
+	padding-bottom: 110px;
+	.airplanes-numbers__title {
+		text-align: center;
+		font-weight: 300;
+		letter-spacing: 0.11em;
+		font-size: 25px;
+		line-height: 37px;
+		margin-bottom: 99px;
+	}
+	.number-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.number-block__title {
+		color: $accent-orange;
+		font-size: 30px;
+		line-height: 37px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	.number-block__text {
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.01em;
+	}
+}

@@ -1,0 +1,37 @@
+extends partials/layout
+
+//- Override default config variables
+append config
+
+	//- ********** Settings **********
+	//- ==============================
+	-var pageTitle = 'Самолеты'
+	//- ==============================
+	//- ********* Settings END *******
+
+//- Page Content
+block content
+	section.airplanes-hero
+		img(src="./img/airplanes-hero.png", alt="")
+		.airplanes-hero__caption
+			h1.airplanes-hero__title.family-roboto Самолёт VL3 Evolution
+			button.btn.btn-main Подробнее
+
+	section.airplanes-numbers
+		.container.airplanes-numbers__container
+			h3.airplanes-numbers__title.family-roboto БЫСТРО, БЕЗОПАСНО, ЭКОНОМИЧНО!
+			.row
+				.col-lg-4.mb-5
+					.airplanes-numbers__block.number-block
+						.number-block__title до 370 км / час.
+						.number-block__text Скорость
+				.col-lg-4.mb-5
+					.airplanes-numbers__block.number-block
+						.number-block__title 70 км / час.
+						.number-block__text Скорость сваливания
+				.col-lg-4.mb-5
+					.airplanes-numbers__block.number-block
+						.number-block__title  до 2000 км.
+						.number-block__text Дальность полёта
+
+	section.
