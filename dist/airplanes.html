@@ -186,12 +186,13 @@
             <li class="nav-item"><a class="nav-link" id="tab-B" href="#pane-B" data-toggle="tab" role="tab">Корпус</a></li>
             <li class="nav-item"><a class="nav-link" id="tab-C" href="#pane-C" data-toggle="tab" role="tab">Крыло</a></li>
             <li class="nav-item"><a class="nav-link" id="tab-D" href="#pane-D" data-toggle="tab" role="tab">Хвост</a></li>
+            <li class="nav-item"><a class="nav-link" id="tab-E" href="#pane-E" data-toggle="tab" role="tab">Шасси</a></li>
           </ul>
           <div class="tab-content" id="content" role="tablist">
             <div class="card tab-pane fade show active" id="pane-A" role="tabpanel" aria-labelledby="tab-A">
               <div class="card-header" id="heading-A" role="tab">
                 <h5 class="mb-0">
-                  <!-- Note: `data-parent` removed from here--><a data-toggle="collapse" href="#collapse-A" aria-expanded="true" aria-controls="collapse-A">Пропеллер</a>
+                  <!-- Note: `data-parent` removed from here--><a class="nav-link" data-toggle="collapse" href="#collapse-A" aria-expanded="true" aria-controls="collapse-A">Пропеллер</a>
                 </h5>
               </div>
               <!-- Note: New place of `data-parent`-->
@@ -201,14 +202,16 @@
                     <div class="col-lg-6 d-flex align-items-center">
                       <div class="tab-text">Планер полностью изготовлен из композитного материала, который отличается удельной прочностью и превосходными усталостными характеристиками. Весь самолет может быть разобран на отдельные части, то есть обе половины поверхности крыла и хвостового оперения, включая стабилизаторы, могут быть отделены от фюзеляжа для облегчения транспортировки самолета.</div>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center"><img src="./img/airplanes-1.png" alt=""></div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                      <div class="airplanes-tab__img"><img src="./img/airplanes-1.png" alt=""></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="card tab-pane fade" id="pane-B" role="tabpanel" aria-labelledby="tab-B">
               <div class="card-header" id="heading-B" role="tab">
-                <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" href="#collapse-B" aria-expanded="false" aria-controls="collapse-B">Корпус</a></h5>
+                <h5 class="mb-0"><a class="nav-link collapsed" data-toggle="collapse" href="#collapse-B" aria-expanded="false" aria-controls="collapse-B">Корпус</a></h5>
               </div>
               <div class="collapse" id="collapse-B" data-parent="#content" role="tabpanel" aria-labelledby="heading-B">
                 <div class="container">
@@ -216,14 +219,16 @@
                     <div class="col-lg-6 d-flex align-items-center">
                       <div class="tab-text">Планер полностью изготовлен из композитного материала, который отличается удельной прочностью и превосходными усталостными характеристиками. Весь самолет может быть разобран на отдельные части, то есть обе половины поверхности крыла и хвостового оперения, включая стабилизаторы, могут быть отделены от фюзеляжа для облегчения транспортировки самолета.</div>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center"><img src="./img/airplanes-1.png" alt=""></div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                      <div class="airplanes-tab__img"><img src="./img/airplanes-1.png" alt=""></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="card tab-pane fade" id="pane-C" role="tabpanel" aria-labelledby="tab-C">
               <div class="card-header" id="heading-C" role="tab">
-                <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" href="#collapse-C" aria-expanded="false" aria-controls="collapse-C">Крыло</a></h5>
+                <h5 class="mb-0"><a class="nav-link collapsed" data-toggle="collapse" href="#collapse-C" aria-expanded="false" aria-controls="collapse-C">Крыло</a></h5>
               </div>
               <div class="collapse" id="collapse-C" role="tabpanel" data-parent="#content" aria-labelledby="heading-C">
                 <div class="container">
@@ -231,14 +236,16 @@
                     <div class="col-lg-6 d-flex align-items-center">
                       <div class="tab-text">Планер полностью изготовлен из композитного материала, который отличается удельной прочностью и превосходными усталостными характеристиками. Весь самолет может быть разобран на отдельные части, то есть обе половины поверхности крыла и хвостового оперения, включая стабилизаторы, могут быть отделены от фюзеляжа для облегчения транспортировки самолета.</div>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center"><img src="./img/airplanes-1.png" alt=""></div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                      <div class="airplanes-tab__img"><img src="./img/airplanes-1.png" alt=""></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="card tab-pane fade" id="pane-D" role="tabpanel" aria-labelledby="tab-D">
               <div class="card-header" id="heading-D" role="tab">
-                <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" href="#collapse-D" aria-expanded="false" aria-controls="collapse-D">Крыло</a></h5>
+                <h5 class="mb-0"><a class="nav-link collapsed" data-toggle="collapse" href="#collapse-D" aria-expanded="false" aria-controls="collapse-D">Крыло</a></h5>
               </div>
               <div class="collapse" id="collapse-D" role="tabpanel" data-parent="#content" aria-labelledby="heading-D">
                 <div class="container">
@@ -246,7 +253,26 @@
                     <div class="col-lg-6 d-flex align-items-center">
                       <div class="tab-text">Планер полностью изготовлен из композитного материала, который отличается удельной прочностью и превосходными усталостными характеристиками. Весь самолет может быть разобран на отдельные части, то есть обе половины поверхности крыла и хвостового оперения, включая стабилизаторы, могут быть отделены от фюзеляжа для облегчения транспортировки самолета.</div>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center"><img src="./img/airplanes-1.png" alt=""></div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                      <div class="airplanes-tab__img"><img src="./img/airplanes-1.png" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card tab-pane fade" id="pane-E" role="tabpanel" aria-labelledby="tab-E">
+              <div class="card-header" id="heading-E" role="tab">
+                <h5 class="mb-0"><a class="nav-link collapsed" data-toggle="collapse" href="#collapse-E" aria-expanded="false" aria-controls="collapse-D">Шасси</a></h5>
+              </div>
+              <div class="collapse" id="collapse-E" role="tabpanel" data-parent="#content" aria-labelledby="heading-E">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center">
+                      <div class="tab-text">Планер полностью изготовлен из композитного материала, который отличается удельной прочностью и превосходными усталостными характеристиками. Весь самолет может быть разобран на отдельные части, то есть обе половины поверхности крыла и хвостового оперения, включая стабилизаторы, могут быть отделены от фюзеляжа для облегчения транспортировки самолета.</div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                      <div class="airplanes-tab__img"><img src="./img/airplanes-1.png" alt=""></div>
+                    </div>
                   </div>
                 </div>
               </div>
