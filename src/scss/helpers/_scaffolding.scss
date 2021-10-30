@@ -27,3 +27,13 @@ cite { font-style: normal;}
     height: 450px;
   }
 }
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: 1410px;
+}
+
+@media (max-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 100%;
+  }
+}
