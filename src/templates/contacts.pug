@@ -1,0 +1,33 @@
+extends partials/layout
+
+//- Override default config variables
+append config
+
+	//- ********** Settings **********
+	//- ==============================
+	-var pageTitle = 'Контакты'
+	//- ==============================
+	//- ********* Settings END *******
+
+//- Page Content
+block content
+	section.airplanes-hero
+		img(src="./img/airplanes-hero.png", alt="")
+
+	section.contacts-map
+		.container
+			.row
+				.col-lg-6.d-flex.flex-column.justify-content-center
+					.contacts-map__title.family-roboto контактная иформация
+					ul.contacts-map__list
+						li.contacts-map__list-item
+							img(src="./img/icons/location.svg", alt="")
+							span.contacts-map-text Украина, г. Одесса, ул. Тираспольская 5
+						li.contacts-map__list-item
+							img(src="./img/icons/phone.svg", alt="")
+							a.contacts-map-text(href="+380685113500") + 38 068 511 35 00
+
+				.col-lg-6
+					img(src="./img/map.png", alt="")
+
+
